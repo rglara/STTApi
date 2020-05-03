@@ -28,10 +28,13 @@
   "devDependencies": {
     "@types/node": "^10.12.15",
     "copyfiles": "^2.2.0",
+    "pngjs": "^3.3.0",
     "typescript": "^3.2.2"
   },
   "dependencies": {
+    "binary-parser": "^1.6.2",
+    "buffer": "^5.0.8",
     "dexie": "^2.0.4",
-    "unitiyfs-asset-parser": "^0.0.4"
+    "lz4js": "^0.2.0"
   }
 }
