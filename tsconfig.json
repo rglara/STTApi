@@ -9,6 +9,7 @@
     "pretty": true,
     "types": ["node"],
     "lib": ["es2016", "dom"],
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "allowJs": true
   }
 }
