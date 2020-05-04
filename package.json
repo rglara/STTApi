@@ -7,8 +7,8 @@
   "scripts": {
     "prepare": "npm run build",
     "build": "tsc",
-    "postbuild": "node_modules/.bin/copyfiles -f lib/*.d.ts dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postbuild": "copyfiles -f lib/*.d.ts dist",
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
