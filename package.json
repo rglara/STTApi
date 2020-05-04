@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
-    "build": "tsc",
+    "build": "rm -rf dist/ && tsc",
     "postbuild": "copyfiles -f lib/*.d.ts dist",
     "test": "node test/test.js"
   },
