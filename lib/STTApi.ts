@@ -313,6 +313,10 @@ export class STTApiClass {
 			platform_folder: CONFIG.CLIENT_PLATFORM
 		});
 
+		let cdnPath = CONFIG.URL_CDN + data.config.server_environment.environment + '/'
+			+ CONFIG.CLIENT_PLATFORM + '_' + CONFIG.CLIENT_VERSION + '.txt';
+		data.cdnToken = await this._net.get(cdnPath, {}, false);
+
 		this.serverConfig = data;
 	}
 
